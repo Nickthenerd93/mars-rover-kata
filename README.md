@@ -13,7 +13,7 @@ https://kata-log.rocks/mars-rover-kata
 ## Required Features:
 - setup the planet with a starting point for the rover
 - Implement wrapping at edges. But be careful, planets are spheres. Connect the x edge to the other x edge, so (1,1) for x-1 to (5,1), but connect vertical edges towards themselves in inverted coordinates, so (1,1) for y-1 connects to (5,1)
-- implement basic communication interface between operator and rover via character array of commands
+- implement basic communication via commands
 - Implement commands that move the rover forward/backward (f,b)
 - Implement commands that turn the rover left/right (l,r)
 - Implement obstacle detection before each move to a new square. If a given sequence of commands encounters an obstacle, the rover moves up to the last possible point, aborts the sequence and reports the obstacle
@@ -27,7 +27,11 @@ https://kata-log.rocks/mars-rover-kata
 
 | Number | Feature | Tests |
 |--------|---------|-------|
-| 1      | /       | /     |
+| 1      | setup planet with starting point for the rover       | done     |
+| 2      | communication commands | done |
+| 3      | wrapping | done |
+| 4      | obstacle detection | done |
+| 5      | detection feature  | only partly done, since partner left and scope was reevaluated | done |
 
 
 ## Additional Dependencies
@@ -36,6 +40,6 @@ https://kata-log.rocks/mars-rover-kata
 
 | Number | Dependency Name | Dependency Description | Why is it necessary? |
 |--------|-----------------|------------------------|----------------------|
-| 1      | /               | /                      | /                    |
+| 1      | Assertj         | Testing Suite          | For Testing          |
 
 
